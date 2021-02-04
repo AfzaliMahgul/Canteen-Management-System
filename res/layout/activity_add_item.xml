@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.rty.quickmeal.Admin.AddItem">
+
+
+    <EditText
+        android:id="@+id/image_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Item Id"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/image_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_id"
+        android:hint="Enter Item Name"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/image_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_name"
+        android:hint="Enter Item Price"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/image_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_price"
+        android:hint="Enter Item Desc"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/add_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_desc"
+        android:text="Add Image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>

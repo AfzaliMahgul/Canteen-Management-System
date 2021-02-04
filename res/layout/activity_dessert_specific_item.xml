@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_dessert_specific_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.rty.quickmeal.DessertSpecificItem">
+
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/item_desc"
+        android:text="Item Description"
+        android:layout_below="@+id/remove_quantity"
+        android:layout_marginTop="10dp"/>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:orientation="horizontal"
+    >
+
+</LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/whitetext"
+        android:id="@+id/show_cart"
+        android:text="Show Cart"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/whitetext"
+        android:id="@+id/add_to_cart"
+        android:text="Add To Cart"
+        android:layout_above="@+id/show_cart"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp" />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:id="@+id/item_image"
+        android:src="@drawable/ic_account_circle_black_24dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/show_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="4dp"
+        android:text="1"
+        android:textSize="18sp"
+        android:layout_marginBottom="11dp"
+        android:layout_alignBottom="@+id/remove_quantity"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/remove_quantity"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="@drawable/itemshape"
+        android:textColor="@color/whitetext"
+        android:onClick="removeQuantity"
+        android:text="-"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:layout_below="@+id/spec_item_price"
+        android:layout_alignLeft="@+id/spec_item_name"
+        android:layout_alignStart="@+id/spec_item_name" />
+
+    <Button
+        android:id="@+id/add_quantity"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="@drawable/itemshape"
+        android:textColor="@color/whitetext"
+        android:onClick="addQuantity"
+        android:text="+"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:layout_alignBaseline="@+id/show_quantity"
+        android:layout_alignBottom="@+id/show_quantity"
+        android:layout_alignRight="@+id/spec_item_price"
+        android:layout_alignEnd="@+id/spec_item_price" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spec_item_price"
+        android:text="Item Price"
+        android:textSize="18dp"
+        android:layout_marginRight="21dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/item_image"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spec_item_name"
+        android:text="Item Name"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:textSize="18dp"
+        android:layout_above="@+id/remove_quantity"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/spec_item_price" />
+</RelativeLayout>

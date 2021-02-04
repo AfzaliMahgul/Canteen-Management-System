@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bkg1"
+        tools:context="com.example.rty.quickmeal.SignUp">
+
+        <TextView
+            android:id="@+id/login_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="REGISTER ACCOUNT"
+            android:textColor="#d67601"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_marginTop="53dp"
+            android:layout_marginBottom="6dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_title"
+            android:elevation="4dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:orientation="vertical"
+            android:paddingTop="10dp">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffdab9"
+                android:orientation="vertical"
+                android:paddingTop="10dp">
+
+                <EditText
+                    android:id="@+id/uname"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_person_black_24dp"
+                    android:drawableTint="#d67601"
+                    android:layout_marginBottom="16dp"
+                    android:hint="User Name"
+                    android:inputType="text" />
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_email_black_24dp"
+                    android:drawableTint="#d67601"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                     />
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:drawableLeft="@drawable/ic_lock_black_24dp"
+                    android:drawableTint="#d67601"
+                    android:hint="Password"
+                    android:inputType="textPassword" />
+
+                <EditText
+                    android:id="@+id/confpassword"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:drawableLeft="@drawable/ic_lock_black_24dp"
+                    android:drawableTint="#d67601"
+                    android:hint="Confirm Password"
+                    android:inputType="textPassword" />
+
+
+                <Button
+                    android:id="@+id/signup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginRight="22dp"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#d67601"
+                    android:text="REGISTER"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:textSize="22sp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+                <Button
+                    android:id="@+id/backButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginRight="22dp"
+                    android:layout_marginBottom="22dp"
+                    android:background="#d67601"
+                    android:text="BACK"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:textSize="22sp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
